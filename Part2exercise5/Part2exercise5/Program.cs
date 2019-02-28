@@ -39,18 +39,17 @@ namespace Part2exercise5
 
         public static void write(int[] arr)
         {
-            for (int i = 1; i < arr.Length;)
-            {
-                for (int j = 0; j < 5; j++)
-                {
-                    Console.Write(arr[i - 1] + " ");
-                    if (i == arr.Length)
-                    {
+            for (int i = 1; i <= arr.Length;) {
+                for (int j = 0; j < 5; j++) {
+                    Console.Write(arr[i - 1] + ", ");
+                    i++;
+                    if (i >= arr.Length) {
+                        Console.Write(arr[i - 1]);
+                        i++;
                         break;
                     }
-                    i++;
                 }
-                Console.WriteLine();
+                Console.WriteLine("");
             }
         }
     }
