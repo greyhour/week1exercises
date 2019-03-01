@@ -16,7 +16,7 @@ namespace Part2exercise5
             Random ranNum = new Random();
             int[] ranArray = Enumerable
                 .Repeat(0, number)
-                .Select(i => ranNum.Next(0, 10))
+                .Select(i => ranNum.Next(0, 11))
                 .ToArray();
 
             int[] arr2 = new int[number];
